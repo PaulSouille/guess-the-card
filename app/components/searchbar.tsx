@@ -1,6 +1,6 @@
 import { Autocomplete, AutocompleteItem } from "@nextui-org/react";
 import { debounce } from "lodash";
-import { Key, useCallback, useEffect, useRef, useState } from "react";
+import { Key, useCallback, useEffect, useState } from "react";
 import { ACard, getCardById } from "../service/cardsService";
 import IconFaction from "./iconFaction";
 import { LoadingIcon } from "./icons/loading";
@@ -25,7 +25,6 @@ export default function SearchBar({
 }: ChildComponentProps) {
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [filteredItems, setFilteredItems] = useState<ACard[]>([]);
-  const [inputValue, setInputValue] = useState<string>("");
   const resetFilter = (cardToRemove: ACard) => {
     const cardsReset = cards
       .filter((card) => !isCardGuessed([...cardsGuessed, cardToRemove], card))
@@ -38,21 +37,7 @@ export default function SearchBar({
     }
   }, [cards, filteredItems]);
 
-  const inputRef = useRef<HTMLInputElement | null>(null);
-  const handleFocusChange = () => {
-    console.log("focus change");
-    inputRef?.current?.focus();
-  };
-  handleFocusChange();
-
-  const resetInputValue = () => {
-    console.log(inputValue);
-    setInputValue("");
-    // inputRef!.current!.value = "";
-  };
-
   const handleSearch = (searchValue: string) => {
-    handleFocusChange();
     setIsLoading(true);
     const filtered = cards
       .filter(
@@ -63,7 +48,6 @@ export default function SearchBar({
       .slice(0, 10);
     setFilteredItems(filtered);
     setIsLoading(false);
-    handleFocusChange();
   };
 
   const handleSelect = (cardId: Key | null) => {
@@ -72,7 +56,6 @@ export default function SearchBar({
     const card = getCardById(cardId.toString());
     onUserSelectCard(card);
     resetFilter(card);
-    // resetInputValue();
     setIsLoading(false);
   };
 
@@ -89,10 +72,7 @@ export default function SearchBar({
       <Autocomplete
         defaultItems={filteredItems}
         onSelectionChange={debouncedSelect}
-        onClick={handleFocusChange}
         aria-label="test"
-        // menuTrigger={"manual"}
-        // onFocusChange={handleFocusChange}
         description="Les OOF ne sont pas pris en compte."
         onValueChange={handleSearch}
         placeholder={placeholder}
