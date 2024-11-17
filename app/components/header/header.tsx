@@ -14,7 +14,7 @@ export default function Header() {
         </div>
         <div className="h-full  flex-wrap content-center	">
           <Link isBlock className=" font-semibold" href="/">
-            Devine la carte !
+            Guess the card
           </Link>
         </div>
         <div className="grow basis-0	flex	justify-center flex-wrap content-center h-full">

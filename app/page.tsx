@@ -59,6 +59,9 @@ const Home: NextPage = () => {
           src="https://altered-cms-prod-eu.s3.eu-west-3.amazonaws.com/wp-content/uploads/sites/2/2024/07/18130825/altered_homepage_cover_logo.png"
           width={700}
         ></Image>
+        <h2 className="mb-5 text-white text-xl		">
+          Devine la mystérieuse carte !
+        </h2>
         <Card className="w-full justify-items-center self-center	">
           <CardBody className="p-5">
             <Searchbar
