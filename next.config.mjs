@@ -9,7 +9,6 @@ const nextConfig = {
     env: {
         NEXT_PUBLIC_VERSION: version,
     },
-    output: 'export',
 
 };
 
