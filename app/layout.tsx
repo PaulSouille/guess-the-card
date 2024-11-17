@@ -36,7 +36,7 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         <NextUIProvider>
-          <NextThemesProvider attribute="class" defaultTheme="dark">
+          <NextThemesProvider attribute="class" defaultTheme="light">
             <Header></Header>
             <main className=" flex min-h-screen flex-col items-center pt-24 bg-[url('/background_blur.png')]">
               {children}
