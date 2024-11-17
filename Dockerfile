@@ -13,11 +13,6 @@ RUN npm install
 # Copy the rest of the application code
 COPY . .
 
-# Set build argument for DATABASE_URL
-ARG DATABASE_URL
-
-# Set environment variable for Prisma
-ENV DATABASE_URL=$DATABASE_URL
 
 # Generate Prisma client
 RUN npx prisma db push
