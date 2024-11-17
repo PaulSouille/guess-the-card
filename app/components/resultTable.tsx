@@ -18,19 +18,11 @@ export default function ResultTable({
   cardsGuessed,
 }: ChildComponentProps) {
   const isRightValue = (value: string, property: string) => {
-    // Split the property string by '.' to handle nested properties
     const keys = property.split(".") as (keyof ACard)[];
-
     let currentValue: any = cardToGuess;
-    // Traverse the nested properties
     for (let key of keys) {
-      console.log(key);
-      console.log(currentValue);
       currentValue = currentValue![key];
     }
-    console.log(currentValue);
-    console.log(value);
-    // Compare the final value to the desired value
     return currentValue === value;
   };
 

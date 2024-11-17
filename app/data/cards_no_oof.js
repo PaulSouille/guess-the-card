@@ -712,9 +712,9 @@ export const cardsNoOof = [{
     "elements": {
       "MAIN_COST": "6",
       "RECALL_COST": "6",
-      "OCEAN_POWER": "#4#",
-      "MOUNTAIN_POWER": "#4#",
-      "FOREST_POWER": "#4#",
+      "OCEAN_POWER": "4",
+      "MOUNTAIN_POWER": "4",
+      "FOREST_POWER": "4",
       "MAIN_EFFECT": "{J} Pour chaque Permanent que vous contrôlez, vous pouvez activer ses capacités {j}."
     },
     "collectorNumberFormatted": "BTG-019-R-FR"
@@ -890,8 +890,8 @@ export const cardsNoOof = [{
     },
     "name": "Décharge de Kélon",
     "elements": {
-      "MAIN_COST": "#4#",
-      "RECALL_COST": "#4#",
+      "MAIN_COST": "4",
+      "RECALL_COST": "4",
       "OCEAN_POWER": "",
       "MOUNTAIN_POWER": "",
       "FOREST_POWER": "",
@@ -1070,8 +1070,8 @@ export const cardsNoOof = [{
     },
     "name": "Générateur Kélonique",
     "elements": {
-      "MAIN_COST": "#4#",
-      "RECALL_COST": "#4#",
+      "MAIN_COST": "4",
+      "RECALL_COST": "4",
       "OCEAN_POWER": "",
       "MOUNTAIN_POWER": "",
       "FOREST_POWER": "",
@@ -1160,8 +1160,8 @@ export const cardsNoOof = [{
     },
     "name": "La Fonderie, Bastion Axiom",
     "elements": {
-      "MAIN_COST": "#4#",
-      "RECALL_COST": "#4#",
+      "MAIN_COST": "4",
+      "RECALL_COST": "4",
       "OCEAN_POWER": "",
       "MOUNTAIN_POWER": "",
       "FOREST_POWER": "",
@@ -1388,9 +1388,9 @@ export const cardsNoOof = [{
     "elements": {
       "MAIN_COST": "2",
       "RECALL_COST": "2",
-      "OCEAN_POWER": "#4#",
+      "OCEAN_POWER": "4",
       "MOUNTAIN_POWER": "3",
-      "FOREST_POWER": "#4#",
+      "FOREST_POWER": "4",
       "MAIN_EFFECT": "{J} Je gagne [[Fugace]]. (Si je devais être envoyée en Réserve, défaussez-moi à la place.)"
     },
     "collectorNumberFormatted": "BTG-038-R-FR"
@@ -1841,7 +1841,7 @@ export const cardsNoOof = [{
       "MAIN_COST": "3",
       "RECALL_COST": "3",
       "OCEAN_POWER": "4",
-      "MOUNTAIN_POWER": "#4#",
+      "MOUNTAIN_POWER": "4",
       "FOREST_POWER": "4",
       "ECHO_EFFECT": "#{D} : Le prochain Personnage que vous jouez ce tour gagne 1 boost.# (Défaussez-moi de la Réserve pour ça.)"
     },
@@ -2066,9 +2066,9 @@ export const cardsNoOof = [{
     "elements": {
       "MAIN_COST": "6",
       "RECALL_COST": "6",
-      "OCEAN_POWER": "#9#",
-      "MOUNTAIN_POWER": "#9#",
-      "FOREST_POWER": "#9#",
+      "OCEAN_POWER": "9",
+      "MOUNTAIN_POWER": "9",
+      "FOREST_POWER": "9",
       "MAIN_EFFECT": "#[Coriace 1].# (Les Sorts et capacités d'un adversaire qui me ciblent coûtent {1} de plus.)"
     },
     "collectorNumberFormatted": "BTG-053-R-FR"
@@ -2154,11 +2154,11 @@ export const cardsNoOof = [{
     },
     "name": "Kaibara, Léviathan Asgarthi",
     "elements": {
-      "MAIN_COST": "#9#",
-      "RECALL_COST": "#9#",
-      "OCEAN_POWER": "#8#",
-      "MOUNTAIN_POWER": "#8#",
-      "FOREST_POWER": "#8#",
+      "MAIN_COST": "9",
+      "RECALL_COST": "9",
+      "OCEAN_POWER": "8",
+      "MOUNTAIN_POWER": "8",
+      "FOREST_POWER": "8",
       "MAIN_EFFECT": "[Gigantesque]. (Je suis considéré présent dans chacune de vos Expéditions.)  [Coriace X], X étant le nombre de régions entre votre Héros et votre Compagnon. (S'ils sont adjacents, X est égal à 0. Les Sorts et capacités d'un adversaire qui me ciblent coûtent {X} de plus.)"
     },
     "collectorNumberFormatted": "BTG-054-R-FR"
@@ -3098,7 +3098,7 @@ export const cardsNoOof = [{
     "name": "Le Chapelier",
     "elements": {
       "MAIN_COST": "4",
-      "RECALL_COST": "#4#",
+      "RECALL_COST": "4",
       "OCEAN_POWER": "5",
       "MOUNTAIN_POWER": "0",
       "FOREST_POWER": "5",
@@ -3189,9 +3189,9 @@ export const cardsNoOof = [{
     "elements": {
       "MAIN_COST": "5",
       "RECALL_COST": "5",
-      "OCEAN_POWER": "#4#",
-      "MOUNTAIN_POWER": "#4#",
-      "FOREST_POWER": "#4#",
+      "OCEAN_POWER": "4",
+      "MOUNTAIN_POWER": "4",
+      "FOREST_POWER": "4",
       "MAIN_EFFECT": "{J} Lancez un dé. Sur 4+, je gagne [[Ancré]]. Sur 1-3, je gagne 3 boosts. (Au Repos, je ne vais pas en Réserve et je perds Ancré. Un boost est un compteur +1/+1/+1. Retirez-le lorsqu'il quitte la zone d'Expédition.)"
     },
     "collectorNumberFormatted": "BTG-080-R-FR"
@@ -3322,8 +3322,8 @@ export const cardsNoOof = [{
     },
     "name": "Meunier, Tu Dors",
     "elements": {
-      "MAIN_COST": "#4#",
-      "RECALL_COST": "#4#",
+      "MAIN_COST": "4",
+      "RECALL_COST": "4",
       "OCEAN_POWER": "",
       "MOUNTAIN_POWER": "",
       "FOREST_POWER": "",
@@ -3458,8 +3458,8 @@ export const cardsNoOof = [{
     },
     "name": "Prison de Peinture",
     "elements": {
-      "MAIN_COST": "#4#",
-      "RECALL_COST": "#4#",
+      "MAIN_COST": "4",
+      "RECALL_COST": "4",
       "OCEAN_POWER": "",
       "MOUNTAIN_POWER": "",
       "FOREST_POWER": "",
@@ -3503,8 +3503,8 @@ export const cardsNoOof = [{
     },
     "name": "Apothéose de l'Esprit",
     "elements": {
-      "MAIN_COST": "#8#",
-      "RECALL_COST": "#8#",
+      "MAIN_COST": "8",
+      "RECALL_COST": "8",
       "OCEAN_POWER": "",
       "MOUNTAIN_POWER": "",
       "FOREST_POWER": "",
@@ -4363,8 +4363,8 @@ export const cardsNoOof = [{
       "MAIN_COST": "3",
       "RECALL_COST": "3",
       "OCEAN_POWER": "5",
-      "MOUNTAIN_POWER": "#4#",
-      "FOREST_POWER": "#4#",
+      "MOUNTAIN_POWER": "4",
+      "FOREST_POWER": "4",
       "MAIN_EFFECT": "J'ai [Défenseur] sauf si vous contrôlez au moins deux autres Plantes. (Mon Expédition ne peut pas avancer au Crépuscule.)"
     },
     "collectorNumberFormatted": "BTG-110-R-FR"
@@ -4405,8 +4405,8 @@ export const cardsNoOof = [{
     },
     "name": "Pignon Pugnace",
     "elements": {
-      "MAIN_COST": "#4#",
-      "RECALL_COST": "#4#",
+      "MAIN_COST": "4",
+      "RECALL_COST": "4",
       "OCEAN_POWER": "3",
       "MOUNTAIN_POWER": "3",
       "FOREST_POWER": "3",
@@ -5663,8 +5663,8 @@ export const cardsNoOof = [{
     },
     "name": "Anubis",
     "elements": {
-      "MAIN_COST": "#4#",
-      "RECALL_COST": "#4#",
+      "MAIN_COST": "4",
+      "RECALL_COST": "4",
       "OCEAN_POWER": "3",
       "MOUNTAIN_POWER": "3",
       "FOREST_POWER": "3",
@@ -5889,7 +5889,7 @@ export const cardsNoOof = [{
     "name": "Sceaux Adhésifs",
     "elements": {
       "MAIN_COST": "3",
-      "RECALL_COST": "#4#",
+      "RECALL_COST": "4",
       "OCEAN_POWER": "",
       "MOUNTAIN_POWER": "",
       "FOREST_POWER": "",
@@ -5978,8 +5978,8 @@ export const cardsNoOof = [{
     },
     "name": "Jour de Célébration",
     "elements": {
-      "MAIN_COST": "#8#",
-      "RECALL_COST": "#8#",
+      "MAIN_COST": "8",
+      "RECALL_COST": "8",
       "OCEAN_POWER": "",
       "MOUNTAIN_POWER": "",
       "FOREST_POWER": "",
@@ -6023,8 +6023,8 @@ export const cardsNoOof = [{
     },
     "name": "Le Monolithe, Bastion Ordis",
     "elements": {
-      "MAIN_COST": "#4#",
-      "RECALL_COST": "#4#",
+      "MAIN_COST": "4",
+      "RECALL_COST": "4",
       "MAIN_EFFECT": "Lorsqu'un Personnage #non-jeton# rejoint vos Expéditions — Il gagne 1 boost."
     },
     "collectorNumberFormatted": "BTG-149-R-FR"
@@ -6427,7 +6427,7 @@ export const cardsNoOof = [{
     "name": "Baku",
     "elements": {
       "MAIN_COST": "4",
-      "RECALL_COST": "#4#",
+      "RECALL_COST": "4",
       "OCEAN_POWER": "2",
       "MOUNTAIN_POWER": "2",
       "FOREST_POWER": "2",
@@ -7013,7 +7013,7 @@ export const cardsNoOof = [{
     },
     "name": "Sceau de Conjuration",
     "elements": {
-      "MAIN_COST": "#4#",
+      "MAIN_COST": "4",
       "RECALL_COST": "5",
       "OCEAN_POWER": "",
       "MOUNTAIN_POWER": "",
@@ -7104,7 +7104,7 @@ export const cardsNoOof = [{
     "name": "Petit Pas, Bond de Géant",
     "elements": {
       "MAIN_COST": "6",
-      "RECALL_COST": "#7#",
+      "RECALL_COST": "7",
       "OCEAN_POWER": "",
       "MOUNTAIN_POWER": "",
       "FOREST_POWER": "",

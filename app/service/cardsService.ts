@@ -20,7 +20,6 @@ export function getCardById(cardId : string): ACard{
 
 export async function fetchRareCards(url: string, cards: ACard[]): Promise<ACard[]> {
   try {
-    console.log("fetching"+url)
     const response = await apiClient.get(url);
     const data: CardCollectionResponse = response.data;
 

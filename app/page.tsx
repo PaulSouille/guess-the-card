@@ -18,7 +18,6 @@ const Home: NextPage = () => {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
   const victory = () => {
-    console.log("victory");
     onOpen();
   };
 
