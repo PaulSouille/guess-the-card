@@ -21,12 +21,13 @@ const config: Config = {
       colors: {
         white: "#FFFFFF",
         black: "#2e2e2e",
-        error: "#FF0000 ",
         primary: "#000",
       },
       spacing: {
         '60': '40rem',
       },
+      zIndex:{
+        'under': '-10'}
     },
   },
   plugins: [

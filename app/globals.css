@@ -85,13 +85,48 @@ body {
   text-shadow: 0 2px 10px #000;
 }
 
-.custom-table {
-  border-collapse: separate !important;
-  border-spacing: 5px 5px !important;
-}
 
 table {
   text-indent: 0;
   border-color: inherit;
-  border-collapse: separate;
+  /* border-collapse: separate; */
+}
+
+
+
+.custom-table >.bg-content1{
+  background-color:transparent !important;
+
+}
+
+
+@media (min-width: 400px) {
+  .background-gradient::before {
+    background: radial-gradient(
+      20% 50% at 50% 50%,
+      rgba(71, 127, 247, 0.376) 0%,
+      rgba(37, 38, 44, 0) 100%
+    );
+    z-index: 0;
+    content: "";
+    position: absolute;
+    inset: 0px;
+    transform: scale(1);
+    pointer-events: none;
+  }
+}
+
+#page {
+	min-height:100vh; /* 1 */
+	display:flex; /* 2 */
+	flex-direction:column; /* 3 */
+}
+
+#content {
+	flex-grow:1; /* 4 */
+}
+
+
+body {
+  background-color: rgb(23 24 28 / 1);
 }

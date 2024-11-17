@@ -12,7 +12,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Guess the card",
-  description: "GTC",
+  description: "Connais-tu altered aussi bien que tu ne le pense ?",
 };
 
 export default function RootLayout({
@@ -34,14 +34,18 @@ export default function RootLayout({
           type="text/css"
         />
       </head>
-      <body className={inter.className}>
+      <body className={`fixed w-full background-gradient ${inter.className}`}>
+        {/* <img
+          src="/background_blur.png"
+          className="absolute object-cover w-full object-top h-full z-under	"
+        ></img> */}
         <NextUIProvider>
-          <NextThemesProvider attribute="class" defaultTheme="light">
-            <Header></Header>
-            <main className=" flex min-h-screen flex-col items-center pt-24 bg-[url('/background_blur.png')]">
-              {children}
-            </main>
-            <Footer></Footer>
+          <NextThemesProvider attribute="class" defaultTheme="dark">
+            <div className="flex flex-col h-screen	">
+              <Header></Header>
+              <main className=" dark grow flex flex-col ">{children}</main>
+              <Footer></Footer>
+            </div>
           </NextThemesProvider>
         </NextUIProvider>
       </body>

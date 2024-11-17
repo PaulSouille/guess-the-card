@@ -68,12 +68,11 @@ export default function SearchBar({
   );
 
   return (
-    <div className="flex   content-center	justify-center 	mb-5">
+    <div className="flex w-full flex-col content-center	justify-center 	mb-5">
       <Autocomplete
         defaultItems={filteredItems}
         onSelectionChange={debouncedSelect}
         aria-label="test"
-        description="Les OOF ne sont pas pris en compte."
         onValueChange={handleSearch}
         placeholder={placeholder}
         endContent={isLoading && <LoadingIcon />}
@@ -107,6 +106,7 @@ export default function SearchBar({
           </AutocompleteItem>
         )}
       </Autocomplete>
+      <div className="text-sm">{"Les OOF ne sont pas pris en compte."}</div>
     </div>
   );
 }

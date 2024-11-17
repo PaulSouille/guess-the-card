@@ -5,7 +5,7 @@ export default function Header() {
   {
     return (
       <div
-        className={`${styles.borderTest} flex justify-between h-16 content-center flex-wrap `}
+        className={`flex ${styles.borderTest} hidden bg-white justify-between h-16 content-center flex-wrap `}
       >
         <div className="grow basis-0 flex justify-center	flex-wrap content-center h-full	">
           <Link isBlock className=" font-semibold" href="/">
