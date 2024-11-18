@@ -35,15 +35,12 @@ export default function RootLayout({
       <body
         className={`fixed w-full background-gradient background-color-black ${inter.className}`}
       >
-        {/* <img
-          src="/background_blur.png"
-          className="absolute object-cover w-full object-top h-full z-under	"
-        ></img> */}
         <NextUIProvider>
           <NextThemesProvider attribute="class" defaultTheme="dark">
             <div className="flex flex-col h-screen	">
-              {/* <Header></Header> */}
-              <main className=" dark grow flex flex-col ">{children}</main>
+              <main className="  dark grow flex flex-col overflow-x-auto ">
+                {children}
+              </main>
             </div>
           </NextThemesProvider>
         </NextUIProvider>

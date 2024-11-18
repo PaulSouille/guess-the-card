@@ -48,14 +48,14 @@ const Home: NextPage = () => {
   return (
     <div>
       <div id="page">
-        <div id="content">
-          <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 sm:mt-20 mt-20 ">
+        <div id="content" className="grow">
+          <main className="flex mb-5 flex-1 w-full flex-col items-center justify-center text-center px-4 sm:mt-20 mt-20 ">
             <h1 className="mx-auto max-w-4xl font-display text-5xl font-bold tracking-normal text-gray-300 sm:text-7xl">
               <span className="relative whitespace-nowrap text-blue-600">
                 <div className="flex flex-col  gap-4">
                   <span className="h-16 w-16  ">{"Devine"}</span>
                 </div>
-              </span>{" "}
+              </span>
               la carte du jour
             </h1>
 

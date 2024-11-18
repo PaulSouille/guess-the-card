@@ -22,7 +22,7 @@ const config: Config = {
       colors: {
         white: "#FFFFFF",
         black: "#2e2e2e",
-        primary: "#000",
+        primary: "#000"
       },
       spacing: {
         '60': '40rem',

@@ -9932,48 +9932,7 @@ export const cardsLocal =  [
         },
         "collectorNumberFormatted": "BTG-120-F-FR"
     },
-    {
-        "@id": "/cards/ALT_CORE_B_NE_FOILER_R",
-        "@type": "Card",
-        "reference": "ALT_CORE_B_NE_FOILER_R",
-        "cardType": {
-            "@id": "/card_types/01HNG3J9M5WABMNT20908656JC",
-            "@type": "CardType",
-            "reference": "FOILER",
-            "id": "01HNG3J9M5WABMNT20908656JC",
-            "name": "Foiler"
-        },
-        "rarity": {
-            "@id": "/rarities/RARE",
-            "@type": "Rarity",
-            "reference": "RARE",
-            "id": "01GE7AC9WY6PK56RADXXD6P1T5",
-            "name": "Rare"
-        },
-        "cardProduct": {
-            "@id": "/card_products/01H1NW5YEN8B72T6CXPYDXV5CZ",
-            "@type": "CardProduct",
-            "reference": "B",
-            "name": "Booster"
-        },
-        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_FOILER/JPG/ALT_CORE_FOILER_R_RGB_fr_FR.jpg",
-        "qrUrlDetail": "https://qr.altered.gg/ALT_CORE_B_NE_FOILER_R",
-        "id": "01HNG3TFWCE87MDW62152KAQ8Z",
-        "mainFaction": {
-            "@id": "/factions/NE",
-            "@type": "Faction",
-            "reference": "NE",
-            "color": "#8f95b2",
-            "id": "01HKAFVTTJFNBREV3V8Z4NR3Z9",
-            "name": "Neutre"
-        },
-        "name": "Foiler",
-        "elements": {
-            "MAIN_COST": "0",
-            "RECALL_COST": "0"
-        },
-        "collectorNumberFormatted": "BTG-01-R-FR"
-    },
+    
     {
         "@id": "/cards/ALT_CORE_B_OR_04_R1",
         "@type": "Card",
