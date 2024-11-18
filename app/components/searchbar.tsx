@@ -2,7 +2,7 @@ import { Autocomplete, AutocompleteItem } from "@nextui-org/react";
 import { debounce } from "lodash";
 import { Key, useCallback, useEffect, useState } from "react";
 import { ACard, getCardById } from "../service/cardsService";
-import IconFaction from "./iconFaction";
+import IconFaction from "./icons/iconFaction";
 import { LoadingIcon } from "./icons/loading";
 import { SearchIcon } from "./icons/search-icon";
 
@@ -106,7 +106,9 @@ export default function SearchBar({
           </AutocompleteItem>
         )}
       </Autocomplete>
-      <div className="text-sm">{"Les OOF ne sont pas pris en compte."}</div>
+      <div className="text-sm m-[5px] text-color-white">
+        {"Les OOF ne sont pas pris en compte."}
+      </div>
     </div>
   );
 }

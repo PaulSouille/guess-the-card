@@ -4,8 +4,6 @@ import type { Metadata } from "next";
 import { ThemeProvider as NextThemesProvider } from "next-themes";
 
 import { Inter } from "next/font/google";
-import Footer from "./components/footer/footer";
-import Header from "./components/header/header";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -34,7 +32,9 @@ export default function RootLayout({
           type="text/css"
         />
       </head>
-      <body className={`fixed w-full background-gradient ${inter.className}`}>
+      <body
+        className={`fixed w-full background-gradient background-color-black ${inter.className}`}
+      >
         {/* <img
           src="/background_blur.png"
           className="absolute object-cover w-full object-top h-full z-under	"
@@ -42,9 +42,8 @@ export default function RootLayout({
         <NextUIProvider>
           <NextThemesProvider attribute="class" defaultTheme="dark">
             <div className="flex flex-col h-screen	">
-              <Header></Header>
+              {/* <Header></Header> */}
               <main className=" dark grow flex flex-col ">{children}</main>
-              <Footer></Footer>
             </div>
           </NextThemesProvider>
         </NextUIProvider>

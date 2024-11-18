@@ -90,9 +90,10 @@ table {
   border-color: inherit;
   border-collapse: separate;
 }
-.custom-table {
+.custom-table> div> div {
   border-collapse: separate !important;
   border-spacing: 5px 5px !important;
+  border-radius: 0px;
 }
 /* .custom-table > .bg-content1 {
   background-color: transparent !important;
@@ -124,6 +125,12 @@ table {
   flex-grow: 1; /* 4 */
 }
 
-body {
+
+
+.background-color-black{
   background-color: rgb(23 24 28 / 1);
+}
+
+.text-color-white {
+  color: rgb(209 213 219 / 1);
 }

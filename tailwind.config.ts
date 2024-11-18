@@ -12,6 +12,7 @@ const config: Config = {
   darkMode: "class",
 
   theme: {
+    
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

@@ -11,12 +11,14 @@
   "dependencies": {
     "@fireworks-js/react": "^2.10.8",
     "@nextui-org/react": "^2.4.8",
+    "@nextui-org/shared-icons": "^2.0.9",
     "@nextui-org/system": "^2.2.2",
     "@nextui-org/theme": "^2.2.6",
     "@tabler/core": "^1.0.0-beta20",
     "@tabler/icons-react": "^3.7.0",
     "@tailwindcss/typography": "^0.5.13",
     "axios": "^1.7.2",
+    "canvas-confetti": "^1.9.3",
     "dotenv": "^16.4.5",
     "framer-motion": "^11.2.12",
     "lodash": "^4.17.21",
@@ -28,6 +30,7 @@
     "react-dom": "^18"
   },
   "devDependencies": {
+    "@types/canvas-confetti": "^1.6.4",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",

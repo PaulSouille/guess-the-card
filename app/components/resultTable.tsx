@@ -32,6 +32,7 @@ export default function ResultTable({
         <TableHeader>
           <TableColumn>NOM</TableColumn>
           <TableColumn>FACTION</TableColumn>
+          <TableColumn>TYPE</TableColumn>
           <TableColumn>MANA MAIN</TableColumn>
           <TableColumn>MANA RESERVE</TableColumn>
           <TableColumn>FORET</TableColumn>
@@ -54,6 +55,16 @@ export default function ResultTable({
               >
                 {cardToGuess?.mainFaction.name}
               </TableCell>
+              <TableCell
+                className={`${
+                  isRightValue(cardToGuess.cardType.name, "cardType.name")
+                    ? "bg-green-500"
+                    : ""
+                } rounded-md`}
+              >
+                {cardToGuess?.cardType.name}
+              </TableCell>
+
               <TableCell
                 className={`${
                   isRightValue(

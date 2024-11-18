@@ -1,9 +1,11 @@
 "use client";
 
 import { Card, CardBody, useDisclosure } from "@nextui-org/react";
+import confetti from "canvas-confetti";
 import type { NextPage } from "next";
 import Head from "next/head";
 import { useEffect, useState } from "react";
+import Footer from "./components/footer/footer";
 import ResultTable from "./components/resultTable";
 import Searchbar from "./components/searchbar";
 import VictoryModal from "./components/victoryModal";
@@ -15,9 +17,12 @@ const Home: NextPage = () => {
   const [searchbarPlaceholder, setSearchbarPlaceholder] = useState<string>("");
   const [cardsGuessed, setCardsGuessed] = useState<ACard[]>([]);
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
-
+  const handleConfetti = () => {
+    confetti({ zIndex: 1000 });
+  };
   const victory = () => {
     onOpen();
+    handleConfetti();
   };
 
   const onUserSelectCard = (card: ACard) => {
@@ -43,15 +48,12 @@ const Home: NextPage = () => {
   return (
     <div>
       <div id="page">
-        <Head>
-          <title>Intensifier</title>
-        </Head>
         <div id="content">
           <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 sm:mt-20 mt-20 ">
             <h1 className="mx-auto max-w-4xl font-display text-5xl font-bold tracking-normal text-gray-300 sm:text-7xl">
               <span className="relative whitespace-nowrap text-blue-600">
-                <div className="flex flex-col animate-shake gap-4">
-                  <span className="h-16 w-16  rounded-md ">{"Devine"}</span>
+                <div className="flex flex-col  gap-4">
+                  <span className="h-16 w-16  ">{"Devine"}</span>
                 </div>
               </span>{" "}
               la carte du jour
@@ -91,6 +93,7 @@ const Home: NextPage = () => {
             </div>
           </main>
         </div>
+        <Footer></Footer>
       </div>
     </div>
   );
