@@ -28,15 +28,12 @@ export default function ResultTable({
 
   return (
     <div className="overflow-x-auto custom-table">
-      <Table
-        className="custom-table"
-        aria-label="Example static collection table"
-      >
+      <Table className="custom-table" aria-label="results table">
         <TableHeader>
           <TableColumn>NOM</TableColumn>
           <TableColumn>FACTION</TableColumn>
-          <TableColumn>COUT MANA MAIN</TableColumn>
-          <TableColumn>COUT MANA RESERVE</TableColumn>
+          <TableColumn>MANA MAIN</TableColumn>
+          <TableColumn>MANA RESERVE</TableColumn>
           <TableColumn>FORET</TableColumn>
           <TableColumn>MONTAGNE</TableColumn>
           <TableColumn>OCEAN</TableColumn>
