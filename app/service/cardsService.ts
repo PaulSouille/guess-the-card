@@ -1,5 +1,7 @@
 import axios from "axios";
 import { cardsNoOof } from "../data/cards_no_oof";
+const crypto = require('crypto');
+
 const apiClient = axios.create({
   baseURL: process.env.NEXT_PUBLIC_ALTERED_API_URL,
   headers: {
@@ -33,6 +35,31 @@ export async function fetchRareCards(url: string, cards: ACard[]): Promise<ACard
     console.error("Error fetching cards:", error);
     return cards; 
   }
+}
+
+function getRandomNumberForDate(date: any) {
+  const hash = crypto.createHash('sha256').update(date).digest('hex');
+
+  const randomNumber = parseInt(hash, 16) % 163 + 1;
+  return randomNumber;
+}
+
+
+function getDate() {
+  const now = new Date();
+  const formatter = new Intl.DateTimeFormat('fr-FR', {
+      timeZone: 'Europe/Paris',
+      year: 'numeric',
+      month: '2-digit',
+      day: '2-digit',
+  });
+  return formatter.format(now);
+}
+
+export function getDailyCard(cards: ACard[]): ACard{
+  const date = getDate();
+  return cards[getRandomNumberForDate(date)];
+
 }
 
 export function getRandomCard(cards: ACard[]): ACard{

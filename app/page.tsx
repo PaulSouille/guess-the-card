@@ -9,7 +9,12 @@ import Footer from "./components/footer/footer";
 import ResultTable from "./components/resultTable";
 import Searchbar from "./components/searchbar";
 import VictoryModal from "./components/victoryModal";
-import { ACard, findCards, getRandomCard } from "./service/cardsService";
+import {
+  ACard,
+  findCards,
+  getDailyCard,
+  getRandomCard,
+} from "./service/cardsService";
 
 const Home: NextPage = () => {
   const [cardToGuess, setCardToGuess] = useState<ACard | null>(null);
@@ -38,8 +43,9 @@ const Home: NextPage = () => {
     setCards(fetchCards);
 
     if (fetchCards.length > 0) {
-      const randomCard = getRandomCard(fetchCards);
-      setCardToGuess(randomCard);
+      const dailyCard = getDailyCard(fetchCards);
+      console.log(dailyCard.name);
+      setCardToGuess(dailyCard);
       setSearchbarPlaceholder(
         `${getRandomCard(fetchCards).name}, ${getRandomCard(fetchCards).name}, ${getRandomCard(fetchCards).name}`,
       );
@@ -82,7 +88,6 @@ const Home: NextPage = () => {
                       cards={cards}
                       onUserSelectCard={onUserSelectCard}
                     ></Searchbar>
-
                     <ResultTable
                       cardToGuess={cardToGuess!}
                       cardsGuessed={cardsGuessed}
