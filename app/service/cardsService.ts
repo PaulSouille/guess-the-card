@@ -1,5 +1,6 @@
 import axios from "axios";
-import { cardsNoOof } from "../data/cards_no_oof";
+import { cardsNoOofAlizeSet } from "../data/cards_no_oof_alize_set";
+import { cardsNoOofCoreSet } from "../data/cards_no_oof_core_set";
 const crypto = require('crypto');
 
 const apiClient = axios.create({
@@ -9,13 +10,20 @@ const apiClient = axios.create({
   },
   timeout: 5000,
 });
-export function findCards(): ACard[] {
+export function findAllCards(): ACard[] {
+  return [...cardsNoOofCoreSet, ...cardsNoOofAlizeSet] as ACard[];
+}
 
-  return cardsNoOof as ACard[];
+export function findAllCoreSet(): ACard[] {
+  return cardsNoOofCoreSet as ACard[];
+}
+
+export function findAllAlizeSet(): ACard[] {
+  return cardsNoOofCoreSet as ACard[];
 }
 
 export function getCardById(cardId : string): ACard{
-  return findCards().find((card)=>{
+  return findAllCards().find((card)=>{
     return card.id === cardId
   })!
 }
@@ -37,10 +45,10 @@ export async function fetchRareCards(url: string, cards: ACard[]): Promise<ACard
   }
 }
 
-function getRandomNumberForDate(date: any) {
+function getRandomNumberForDate(date: any, cardsSize: number) {
   const hash = crypto.createHash('sha256').update(date).digest('hex');
 
-  const randomNumber = parseInt(hash, 16) % 163 + 1;
+  const randomNumber = parseInt(hash, 16) % cardsSize + 1;
   return randomNumber;
 }
 
@@ -58,7 +66,7 @@ function getDate() {
 
 export function getDailyCard(cards: ACard[]): ACard{
   const date = getDate();
-  return cards[getRandomNumberForDate(date)];
+  return cards[getRandomNumberForDate(date, cards.length)];
 
 }
 

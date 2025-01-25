@@ -1,4 +1,4 @@
-export const cardsNoOof = [{
+export const cardsNoOofCoreSet = [{
     "@id": "/cards/ALT_CORE_B_AX_04_R1",
     "@type": "Card",
     "reference": "ALT_CORE_B_AX_04_R1",

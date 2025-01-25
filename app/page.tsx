@@ -11,7 +11,7 @@ import Searchbar from "./components/searchbar";
 import VictoryModal from "./components/victoryModal";
 import {
   ACard,
-  findCards,
+  findAllCards,
   getDailyCard,
   getRandomCard,
 } from "./service/cardsService";
@@ -39,12 +39,11 @@ const Home: NextPage = () => {
     );
   };
   useEffect(() => {
-    const fetchCards = findCards();
+    const fetchCards = findAllCards();
     setCards(fetchCards);
 
     if (fetchCards.length > 0) {
       const dailyCard = getDailyCard(fetchCards);
-      console.log(dailyCard.name);
       setCardToGuess(dailyCard);
       setSearchbarPlaceholder(
         `${getRandomCard(fetchCards).name}, ${getRandomCard(fetchCards).name}, ${getRandomCard(fetchCards).name}`,
